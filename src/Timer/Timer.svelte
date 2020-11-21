@@ -2,7 +2,7 @@
     import { createEventDispatcher } from 'svelte';
     import ProgressBar from './ProgressBar.svelte';
 
-    const totalSec = 2;
+    const totalSec = 20;
     let secondsLeft = totalSec;
     let isRunning = false;
 
