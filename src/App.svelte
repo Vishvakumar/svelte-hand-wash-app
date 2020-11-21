@@ -1,6 +1,12 @@
 <script>
     import HowTo from './HowTo.svelte';
     import Timer from './Timer/Timer.svelte';
+    let audio;
+    function timerEnds() {
+        //console.log(e);
+        audio.play();
+    }
+    
 </script>
 <style>
     h1 { text-align: center; }
@@ -13,7 +19,12 @@
     <h1>Handwashing App</h1>
 
     <HowTo />
-    <Timer />
+    <Timer on:end={timerEnds} />
+
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <audio bind:this={audio}>
+        <source src="sound-yeah.wav" >
+    </audio>
 
 
     <div bp="grid " class="links">
