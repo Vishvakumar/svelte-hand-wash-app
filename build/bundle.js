@@ -329,7 +329,7 @@ var app = (function () {
     	};
     }
 
-    let src = "/howtohandwash.jpg";
+    let src = "howtohandwash.jpg";
 
     class HowTo extends SvelteComponent {
     	constructor(options) {
@@ -487,7 +487,7 @@ var app = (function () {
     	};
     }
 
-    const totalSec = 2;
+    const totalSec = 20;
 
     function instance$1($$self, $$props, $$invalidate) {
     	let secondsLeft = totalSec;
